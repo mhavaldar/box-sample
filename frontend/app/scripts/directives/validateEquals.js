@@ -15,7 +15,7 @@ angular.module('psJwtApp')
 
         scope.$watch(attrs.validateEquals, function(){
           ngModelCtrl.$setViewValue(ngModelCtrl.$viewValue);
-        })
+        });
       }
     };
   });

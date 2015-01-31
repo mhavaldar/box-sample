@@ -15,24 +15,24 @@ angular.module('psJwtApp').config(function ($urlRouterProvider, $stateProvider, 
     .state('register', {
       url: '/register',
       templateUrl: '/views/register.html',
-      controller: "RegisterCtrl"
+      controller: 'RegisterCtrl'
     })
 
     .state('login', {
       url: '/login',
       templateUrl: '/views/login.html',
-      controller: "LoginCtrl"
+      controller: 'LoginCtrl'
     })
 
     .state('jobs', {
       url: '/jobs',
       templateUrl: '/views/jobs.html',
-      controller: "JobsCtrl"
+      controller: 'JobsCtrl'
     })
 
     .state('logout', {
       url: '/logout',
-      controller: "LogoutCtrl"
+      controller: 'LogoutCtrl'
     });
 
   $authProvider.loginUrl = API_URL + 'login';
@@ -41,12 +41,20 @@ angular.module('psJwtApp').config(function ($urlRouterProvider, $stateProvider, 
   $authProvider.google({
     clientId: '763699622880-rq9g0k8qfkv42bfs4pv3i9cvlddmpcba.apps.googleusercontent.com',
     url: API_URL + 'auth/google'
-  })
+  });
 
   $authProvider.facebook({
     clientId: '1538498296428283',
     url: API_URL + 'auth/facebook'
-  })
+  });
+
+  $authProvider.oauth2({
+    name: 'box',
+    url: API_URL + 'auth/box',
+    clientId: 'weatn27zc7z8mxar6oklf3g7p4diqhh3',
+    redirectUri: window.location.origin || window.location.protocol + '//' + window.location.host,
+    authorizationEndpoint: 'https://app.box.com/api/oauth2/authorize'
+  });
 
   $httpProvider.interceptors.push('authInterceptor');
 })

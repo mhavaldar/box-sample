@@ -5,6 +5,7 @@ var passport = require('passport');
 var LocalStrategy = require('./services/localStrategy.js');
 var googleAuth = require('./services/googleAuth.js');
 var facebookAuth = require('./services/facebookAuth.js');
+var boxAuth = require('./services/boxAuth.js');
 var createSendToken = require('./services/jwt.js');
 var jobs = require('./services/jobs.js');
 
@@ -14,7 +15,7 @@ app.use(passport.initialize());
 
 passport.serializeUser(function (user, done) {
   done(null, user.id);
-})
+});
 
 app.use(function (req, res, next) {
   res.header('Access-Control-Allow-Origin', 'http://localhost:9000');
@@ -23,22 +24,24 @@ app.use(function (req, res, next) {
   res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
 
   next();
-})
+});
 
 passport.use('local-login', LocalStrategy.login);
 passport.use('local-register', LocalStrategy.register);
 
 app.post('/register', passport.authenticate('local-register'), function (req, res) {
   createSendToken(req.user, res);
-})
+});
 
 app.post('/login', passport.authenticate('local-login'), function (req, res) {
   createSendToken(req.user, res);
-})
+});
 
 app.post('/auth/facebook', facebookAuth);
 
 app.post('/auth/google', googleAuth);
+
+app.post('/auth/box', boxAuth);
 
 app.get('/jobs', jobs);
 
@@ -46,4 +49,4 @@ mongoose.connect('mongodb://localhost/psjwt');
 
 var server = app.listen(3000, function () {
   console.log('api listening on ', server.address().port);
-})
+});

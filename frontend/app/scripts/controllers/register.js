@@ -11,7 +11,7 @@ angular.module('psJwtApp')
           alert('success', 'Account Created!', 'Welcome, ' + res.data.user.email + '!', 4000);
         })
         .catch(function (err) {
-          alert('warning', 'Opps!', 'Could not register');
+          alert('warning', 'Opps!', 'Could not register - ' +  err.message);
         });
-    }
+    };
   });

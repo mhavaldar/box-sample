@@ -13,40 +13,31 @@ angular.module('psJwtApp').service('auth', function ($http, API_URL, authToken, 
       email: email,
       password: password
     }).success(authSuccessful);
-  }
+  };
 
   this.register = function (email, password) {
     return $http.post(API_URL + 'register', {
       email: email,
       password: password
     }).success(authSuccessful);
-  }
+  };
 
   var urlBuilder = [];
 //  Google OAuth2
   var OAUTH2_PARAMS = {
     clientId: '763699622880-rq9g0k8qfkv42bfs4pv3i9cvlddmpcba.apps.googleusercontent.com',
     authUrl: 'https://accounts.google.com/o/oauth2/auth?'
-  }
+  };
+
   urlBuilder.push('response_type=code',
     'client_id=' + OAUTH2_PARAMS.clientId,
     'redirect_uri=' + window.location.origin,
     'scope=profile email');
 
-  // Box OAuth2
-  //var OAUTH2_PARAMS = {
-  //  clientId: 'weatn27zc7z8mxar6oklf3g7p4diqhh3',
-  //  authUrl: 'https://app.box.com/api/oauth2/authorize?'
-  //}
-  //urlBuilder.push('response_type=code',
-  //  'client_id=' + OAUTH2_PARAMS.clientId,
-  //  'redirect_uri=' + window.location.origin,
-  //  'state=xxaaddaaddss');
-
   this.googleAuth = function () {
     var url = OAUTH2_PARAMS.authUrl + urlBuilder.join('&');
 
-    var options = "width=500, height=500, left=" + ($window.outerWidth - 500) / 2 + ", top=" + ($window.outerHeight - 500) / 2.5;
+    var options = 'width=500, height=500, left=' + ($window.outerWidth - 500) / 2 + ', top=' + ($window.outerHeight - 500) / 2.5;
 
     var deferred = $q.defer();
 
@@ -70,5 +61,5 @@ angular.module('psJwtApp').service('auth', function ($http, API_URL, authToken, 
     });
 
     return deferred.promise;
-  }
+  };
 });
