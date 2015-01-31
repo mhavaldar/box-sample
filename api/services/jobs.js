@@ -5,10 +5,14 @@ module.exports = function (req, res) {
     return res.status(401).send({
       message: 'You are not authroized!'
     });
-  };
+  }
+  ;
 
   var token = req.headers.authorization.split(' ')[1];
   var payload = jwt.decode(token, 'shhhhh...');
+
+  console.log('payload...');
+  console.log(payload);
 
   if (!payload.sub) {
     res.status(401).send({

@@ -18,7 +18,7 @@ module.exports = function (req, res) {
   }
 
   var url = 'https://app.box.com/api/oauth2/token';
-  var folderUrl = 'https://www.box.com/api/2.0/folders/0';
+  var userInfoUrl = 'https://www.box.com/api/2.0/users/me';
 
   request.post(url, {json: true, form: params}, function (err, response, token) {
     console.log(token);
@@ -38,23 +38,28 @@ module.exports = function (req, res) {
     };
 
     request.get({
-      url: folderUrl, headers: headers, json: true
-    }, function (err, response, folders) {
+      url: userInfoUrl, headers: headers, json: true
+    }, function (err, response, userInfo) {
       if (err) console.log(err.message);
 
       console.log('folders...');
-      console.log(JSON.stringify(folders));
+      console.log(JSON.stringify(userInfo));
+
       User.findOne({
-        email: 'manju.havaldar@outlook.com'
+        boxId: userInfo.id
       }, function (err, foundUser) {
 
-        console.log("here");
+        console.log(token);
+        foundUser.accessToken = accessToken;
+        foundUser.refreshToken = token.refresh_token;
 
         if (foundUser) return createSendToken(foundUser, res);
 
         var newUser = new User();
-        newUser.email = 'manju.havaldar@outlook.com';
-        newUser.password = 'a';
+        newUser.boxId = userInfo.id;
+        //newUser.email = userInfo.login;
+        newUser.displayName = userInfo.name;
+
         newUser.save(function (err) {
           if (err) return next(err);
           createSendToken(newUser, res);
