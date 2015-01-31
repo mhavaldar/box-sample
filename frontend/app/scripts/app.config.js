@@ -3,7 +3,7 @@
  */
 'use strict';
 
-angular.module('psJwtApp').config(function ($urlRouterProvider, $stateProvider, $httpProvider) {
+angular.module('psJwtApp').config(function ($urlRouterProvider, $stateProvider, $httpProvider, $authProvider, API_URL) {
   $urlRouterProvider.otherwise('/');
 
   $stateProvider
@@ -35,6 +35,10 @@ angular.module('psJwtApp').config(function ($urlRouterProvider, $stateProvider, 
       controller: "LogoutCtrl"
     });
 
+  $authProvider.google({
+    clientId: '763699622880-rq9g0k8qfkv42bfs4pv3i9cvlddmpcba.apps.googleusercontent.com',
+    url: API_URL + 'auth/google'
+  })
 
   $httpProvider.interceptors.push('authInterceptor');
 })
@@ -44,7 +48,7 @@ angular.module('psJwtApp').config(function ($urlRouterProvider, $stateProvider, 
   .run(function ($window) {
     var params = $window.location.search.substring(1);
 
-    if(params && $window.opener && $window.opener.location.origin === $window.location.origin){
+    if (params && $window.opener && $window.opener.location.origin === $window.location.origin) {
       var pair = params.split('=');
       var code = decodeURIComponent(pair[1]);
 

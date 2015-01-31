@@ -2,355 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83625a15-2311-4f07-a7d9-574e4007dc2b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular/angular.min.js.gzip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular-animate/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular-mocks/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular-scenario/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular-ui-router/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/es5-shim/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/json3/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/satellizer/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/.csscomb.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/.csslintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/.editorconfig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/js/.jscsrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/grunt/.jshintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/js/.jshintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/satellizer/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular-ui-router/CHANGELOG.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/json3/CHANGELOG.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/es5-shim/CHANGES" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular-ui-router/CONTRIBUTING.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/json3/CONTRIBUTING.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/es5-shim/CONTRIBUTORS.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/data/Data.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/Gruntfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/Gruntfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular-ui-router/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/es5-shim/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/json3/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/satellizer/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/MIT-LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/es5-shim/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular-animate/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular-mocks/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular-scenario/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular-ui-router/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/es5-shim/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/json3/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/satellizer/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/effects/Tween.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/_base.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/manipulation/_evalUrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/data/accepts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/core/access.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/css/addGetHookIf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/js/affix.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/ajax.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/event/ajax.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/js/alert.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/alerts.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/mixins/alerts.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/event/alias.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/exports/amd.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular-animate/angular-animate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular-animate/angular-animate.min.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular-animate/angular-animate.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular/angular-csp.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular-mocks/angular-mocks.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular-scenario/angular-scenario.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular-ui-router/api/angular-ui-router.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular-ui-router/release/angular-ui-router.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular-ui-router/release/angular-ui-router.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular/angular.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular/angular.min.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular/angular.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/animate-config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/animate.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/animate.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/effects/animatedSelector.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/var/arr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/attributes/attr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/attributes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/mixins/background-variant.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/badges.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/bootstrap.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/mixins/border-radius.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/attention_seekers/bounce.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/bouncing_entrances/bounceIn.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/bouncing_entrances/bounceInDown.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/bouncing_entrances/bounceInLeft.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/bouncing_entrances/bounceInRight.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/bouncing_entrances/bounceInUp.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/bouncing_exits/bounceOut.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/bouncing_exits/bounceOutDown.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/bouncing_exits/bounceOutLeft.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/bouncing_exits/bounceOutRight.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/bouncing_exits/bounceOutUp.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular-animate/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular-mocks/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular-scenario/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular-ui-router/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/es5-shim/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/json3/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/satellizer/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/breadcrumbs.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/grunt/bs-commonjs-generator.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/grunt/bs-glyphicons-data-generator.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/grunt/bs-lessdoc-parser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/grunt/bs-raw-files-generator.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/button-groups.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/js/button.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/buttons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/mixins/buttons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/callbacks.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/js/carousel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/carousel.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/mixins/center-block.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/var/class2type.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/attributes/classes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/mixins/clearfix.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/close.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/code.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/js/collapse.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular-ui-router/src/common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/component-animations.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/es5-shim/component.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/var/concat.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/grunt/configBridge.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/core.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/css.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/css/var/cssExpand.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/css/curCSS.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/data.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/data/var/data_priv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/data/var/data_user.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/css/defaultDisplay.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/deferred.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/queue/delay.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/deprecated.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/dimensions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/js/dropdown.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/dropdowns.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/effects.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/es5-shim/es5-sham.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/es5-shim/es5-sham.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/es5-shim/es5-sham.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/es5-shim/es5-shim.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/es5-shim/es5-shim.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/es5-shim/es5-shim.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/event.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/fading_entrances/fadeIn.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/fading_entrances/fadeInDown.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/fading_entrances/fadeInDownBig.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/fading_entrances/fadeInLeft.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/fading_entrances/fadeInLeftBig.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/fading_entrances/fadeInRight.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/fading_entrances/fadeInRightBig.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/fading_entrances/fadeInUp.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/fading_entrances/fadeInUpBig.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/fading_exits/fadeOut.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/fading_exits/fadeOutDown.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/fading_exits/fadeOutDownBig.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/fading_exits/fadeOutLeft.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/fading_exits/fadeOutLeftBig.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/fading_exits/fadeOutRight.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/fading_exits/fadeOutRightBig.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/fading_exits/fadeOutUp.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/fading_exits/fadeOutUpBig.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/traversing/findFilter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/attention_seekers/flash.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/flippers/flip.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/flippers/flipInX.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/flippers/flipInY.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/flippers/flipOutX.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/flippers/flipOutY.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/forms.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/mixins/forms.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/css/var/getStyles.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/exports/global.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/glyphicons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/mixins/gradients.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/mixins/grid-framework.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/grid.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/mixins/grid.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/var/hasOwn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/css/hiddenVisibleSelectors.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/mixins/hide-text.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/specials/hinge.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/mixins/image.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/var/indexOf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/core/init.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/input-groups.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/intro.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/css/var/isHidden.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/json3/lib/json3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/json3/lib/json3.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/ajax/jsonp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular-scenario/jstd-scenario-adapter-config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular-scenario/jstd-scenario-adapter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/jumbotron.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/labels.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/mixins/labels.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/lightspeed/lightSpeedIn.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/lightspeed/lightSpeedOut.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/list-group.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/mixins/list-group.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/ajax/load.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/manipulation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/media.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/mixins.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/js/modal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/modals.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/mixins/nav-divider.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/mixins/nav-vertical-align.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/navbar.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/navs.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/ajax/var/nonce.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/normalize.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/offset.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/mixins/opacity.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/outro.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular-animate/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular-mocks/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular-scenario/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/es5-shim/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/pager.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/pagination.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/mixins/pagination.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/panels.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/mixins/panels.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/core/parseHTML.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/ajax/parseJSON.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/ajax/parseXML.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/var/pnum.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/js/popover.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/popovers.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/print.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/mixins/progress-bar.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/progress-bars.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/attributes/prop.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/attention_seekers/pulse.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/var/push.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/queue.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/manipulation/var/rcheckableType.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/core/ready.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/mixins/reset-filter.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/mixins/resize.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular-ui-router/src/resolve.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/responsive-embed.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/responsive-utilities.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/mixins/responsive-visibility.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/css/var/rmargin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/traversing/var/rneedsContext.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/var/rnotwhite.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/css/var/rnumnonpx.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/specials/rollIn.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/specials/rollOut.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/rotating_entrances/rotateIn.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/rotating_entrances/rotateInDownLeft.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/rotating_entrances/rotateInDownRight.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/rotating_entrances/rotateInUpLeft.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/rotating_entrances/rotateInUpRight.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/rotating_exits/rotateOut.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/rotating_exits/rotateOutDownLeft.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/rotating_exits/rotateOutDownRight.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/rotating_exits/rotateOutUpLeft.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/rotating_exits/rotateOutUpRight.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/ajax/var/rquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/core/var/rsingleTag.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/attention_seekers/rubberBand.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/satellizer/satellizer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/satellizer/satellizer.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/grunt/sauce_browsers.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/scaffolding.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/ajax/script.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/js/scrollspy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/selector-native.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/selector-sizzle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/selector.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/serialize.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/attention_seekers/shake.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/es5-shim/shims.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/mixins/size.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/var/slice.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular-ui-router/src/state.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular-ui-router/src/stateDirectives.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular-ui-router/src/stateFilters.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/var/strundefined.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/attributes/support.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/css/support.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/event/support.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/manipulation/support.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/var/support.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/css/swap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/attention_seekers/swing.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/mixins/tab-focus.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/js/tab.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/mixins/table-row.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/tables.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/attention_seekers/tada.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular-ui-router/src/templateFactory.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/mixins/text-emphasis.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/mixins/text-overflow.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/theme.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/thumbnails.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/var/toString.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/js/tooltip.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/tooltip.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/js/transition.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/traversing.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/type.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular-ui-router/src/urlMatcherFactory.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular-ui-router/src/urlRouter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/utilities.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/attributes/val.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/variables.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/mixins/vendor-prefixes.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular-ui-router/src/view.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular-ui-router/src/viewDirective.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/angular-ui-router/src/viewScroll.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/bootstrap/less/wells.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/attention_seekers/wobble.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/wrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/jquery/src/ajax/xhr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/zooming_entrances/zoomIn.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/zooming_entrances/zoomInDown.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/zooming_entrances/zoomInLeft.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/zooming_entrances/zoomInRight.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/zooming_entrances/zoomInUp.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/zooming_exits/zoomOut.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/zooming_exits/zoomOutDown.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/zooming_exits/zoomOutLeft.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/zooming_exits/zoomOutRight.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/lib/animate.css/source/zooming_exits/zoomOutUp.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/.bowerrc" afterPath="$PROJECT_DIR$/frontend/.bowerrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/Gruntfile.js" afterPath="$PROJECT_DIR$/frontend/Gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/app/index.html" afterPath="$PROJECT_DIR$/frontend/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/api.js" afterPath="$PROJECT_DIR$/api/api.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/app/scripts/app.config.js" afterPath="$PROJECT_DIR$/frontend/app/scripts/app.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/app/scripts/app.js" afterPath="$PROJECT_DIR$/frontend/app/scripts/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/app/views/login.html" afterPath="$PROJECT_DIR$/frontend/app/views/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/app/scripts/controllers/login.js" afterPath="$PROJECT_DIR$/frontend/app/scripts/controllers/login.js" />
     </list>
     <ignored path="ps_jwt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -374,61 +30,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/app/index.html">
+      <file leaf-file-name="app.config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/app/scripts/app.config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.76" vertical-offset="759" max-vertical-offset="1440">
-              <caret line="58" column="21" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="267" max-vertical-offset="1008">
+              <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="api.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/app/views/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.4" vertical-offset="0" max-vertical-offset="288">
+              <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/app/scripts/controllers/login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="448">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="api.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/api.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2992">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.8956127" vertical-offset="0" max-vertical-offset="3008">
+              <caret line="37" column="14" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jobs.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/app/scripts/controllers/jobs.js">
+      <file leaf-file-name="auth.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/app/scripts/services/auth.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="256">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".bowerrc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/.bowerrc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.92" vertical-offset="0" max-vertical-offset="144">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gruntfile.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/Gruntfile.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44878048" vertical-offset="2456" max-vertical-offset="6624">
-              <caret line="165" column="46" selection-start-line="165" selection-start-column="46" selection-end-line="165" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.56" vertical-offset="0" max-vertical-offset="176">
-              <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1280">
+              <caret line="27" column="87" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="87" />
               <folding />
             </state>
           </provider>
@@ -447,7 +93,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/api/api.js" />
         <option value="$PROJECT_DIR$/api/package.json" />
         <option value="$PROJECT_DIR$/frontend/app/scripts/controllers/jobs.js" />
         <option value="$PROJECT_DIR$/frontend/app/scripts/services/alert.js" />
@@ -457,6 +102,11 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/frontend/app/index.html" />
         <option value="$PROJECT_DIR$/frontend/Gruntfile.js" />
+        <option value="$PROJECT_DIR$/frontend/app/scripts/app.js" />
+        <option value="$PROJECT_DIR$/frontend/app/scripts/app.config.js" />
+        <option value="$PROJECT_DIR$/frontend/app/views/login.html" />
+        <option value="$PROJECT_DIR$/frontend/app/scripts/controllers/login.js" />
+        <option value="$PROJECT_DIR$/api/api.js" />
       </list>
     </option>
   </component>
@@ -466,7 +116,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="810" />
+    <option name="height" value="807" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -537,7 +187,7 @@
     <property name="options.lastSelected" value="editing.templates" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/ManjuHavaldar/Projects/ps_jwt/frontend/app/scripts/controllers/jobs.js&#10;api.j&#9;FILE&#9;file:///Users/ManjuHavaldar/Projects/ps_jwt/api/api.js&#10;index.&#9;FILE&#9;file:///Users/ManjuHavaldar/Projects/ps_jwt/frontend/app/index.html" />
+    <property name="SearchEverywhereHistoryKey" value="api&#9;FILE&#9;file:///Users/ManjuHavaldar/Projects/ps_jwt/api/api.js&#10;login.j&#9;FILE&#9;file:///Users/ManjuHavaldar/Projects/ps_jwt/frontend/app/scripts/controllers/login.js&#10;login.h&#9;FILE&#9;file:///Users/ManjuHavaldar/Projects/ps_jwt/frontend/app/views/login.html&#10;auth&#9;null&#9;null&#10;app.co&#9;FILE&#9;file:///Users/ManjuHavaldar/Projects/ps_jwt/frontend/app/scripts/app.config.js&#10;app&#9;FILE&#9;file:///Users/ManjuHavaldar/Projects/ps_jwt/frontend/app/scripts/app.js&#10;ap&#9;FILE&#9;file:///Users/ManjuHavaldar/Projects/ps_jwt/api/api.js&#10;api.j&#9;FILE&#9;file:///Users/ManjuHavaldar/Projects/ps_jwt/api/api.js&#10;index.&#9;FILE&#9;file:///Users/ManjuHavaldar/Projects/ps_jwt/frontend/app/index.html" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -600,26 +250,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="810" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="807" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947975" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947975" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32658958" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32803467" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947975" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32803467" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24947146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -699,14 +349,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/app/scripts/controllers/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="448">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/app/scripts/controllers/logout.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="436">
@@ -716,22 +358,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/app/scripts/controllers/register.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="436">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/app/scripts/app.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7505721" vertical-offset="280" max-vertical-offset="944">
-          <caret line="38" column="15" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/app/scripts/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="436">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -767,14 +393,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14563107" vertical-offset="196" max-vertical-offset="752">
           <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2992">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -821,8 +439,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/Gruntfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44878048" vertical-offset="2456" max-vertical-offset="6624">
+        <state vertical-scroll-proportion="-6.814815" vertical-offset="2456" max-vertical-offset="6624">
           <caret line="165" column="46" selection-start-line="165" selection-start-column="46" selection-end-line="165" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/app/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
+          <caret line="11" column="60" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/app/scripts/services/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1280">
+          <caret line="27" column="87" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/app/scripts/app.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="267" max-vertical-offset="1008">
+          <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/app/views/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.4" vertical-offset="0" max-vertical-offset="288">
+          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/app/scripts/controllers/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="448">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8956127" vertical-offset="0" max-vertical-offset="3008">
+          <caret line="37" column="14" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
           <folding />
         </state>
       </provider>
