@@ -2,11 +2,11 @@
 
 /**
  * @ngdoc overview
- * @name frontendApp
+ * @name psJwtApp
  * @description
- * # frontendApp
+ * # psJwtApp
  *
  * Main module of the application.
  */
 angular
-  .module('frontendApp', []);
+  .module('psJwtApp', ['ui.router', 'ngAnimate']);

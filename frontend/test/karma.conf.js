@@ -1,6 +1,6 @@
 // Karma configuration
 // http://karma-runner.github.io/0.12/config/configuration-file.html
-// Generated on 2015-01-31 using
+// Generated on 2015-01-29 using
 // generator-karma 0.8.3
 
 module.exports = function(config) {
@@ -11,7 +11,7 @@ module.exports = function(config) {
     autoWatch: true,
 
     // base path, that will be used to resolve files and exclude
-    basePath: '../',
+    basePath: '../../../../Downloads/frontend',
 
     // testing framework to use (jasmine/mocha/qunit/...)
     frameworks: ['jasmine'],
