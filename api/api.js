@@ -1,14 +1,13 @@
-/**
- * Created by MHavaldar on 1/30/2015.
- */
 var express = require('express');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var User = require('./models/User.js');
-var jwt = require('jwt-simple');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var request = require('request');
+var facebookAuth = require('./services/facebookAuth.js');
+var createSendToken = require('./services/jwt.js');
+var jwt = require('jwt-simple');
 
 //Google OAuth2 parameters
 var OAUTH2_PARAMS = {
@@ -98,17 +97,7 @@ app.post('/login', passport.authenticate('local-login'), function (req, res) {
   createSendToken(req.user, res);
 })
 
-function createSendToken(user, res) {
-  var payload = {
-    sub: user.id
-  }
-
-  var token = jwt.encode(payload, "shhhhh...");
-
-  res.status(200).send({
-    user: user.toJSON(), token: token
-  });
-}
+app.post('/auth/facebook', facebookAuth)
 
 var jobs = [
   'Cook',

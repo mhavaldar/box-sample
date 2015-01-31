@@ -35,9 +35,17 @@ angular.module('psJwtApp').config(function ($urlRouterProvider, $stateProvider, 
       controller: "LogoutCtrl"
     });
 
+  $authProvider.loginUrl = API_URL + 'login';
+  $authProvider.signupUrl = API_URL + 'register';
+
   $authProvider.google({
     clientId: '763699622880-rq9g0k8qfkv42bfs4pv3i9cvlddmpcba.apps.googleusercontent.com',
     url: API_URL + 'auth/google'
+  })
+
+  $authProvider.facebook({
+    clientId: '1538498296428283',
+    url: API_URL + 'auth/facebook'
   })
 
   $httpProvider.interceptors.push('authInterceptor');
