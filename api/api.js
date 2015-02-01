@@ -1,8 +1,8 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-var mongoose = require('mongoose');
+//var mongoose = require('mongoose');
 var passport = require('passport');
-var LocalStrategy = require('./services/localStrategy.js');
+//var LocalStrategy = require('./services/localStrategy.js');
 var googleAuth = require('./services/googleAuth.js');
 var facebookAuth = require('./services/facebookAuth.js');
 var boxAuth = require('./services/boxAuth.js');
@@ -27,8 +27,8 @@ app.use(function (req, res, next) {
   next();
 });
 
-passport.use('local-login', LocalStrategy.login);
-passport.use('local-register', LocalStrategy.register);
+//passport.use('local-login', LocalStrategy.login);
+//passport.use('local-register', LocalStrategy.register);
 
 app.post('/register', passport.authenticate('local-register'), function (req, res) {
   createSendToken(req.user, res);
@@ -48,7 +48,7 @@ app.get('/jobs', jobs);
 
 app.get('/api/folder/:id?', boxFolder);
 
-mongoose.connect('mongodb://localhost/psjwt');
+//mongoose.connect('mongodb://localhost/psjwt');
 
 var server = app.listen(3000, function () {
   console.log('api listening on ', server.address().port);
