@@ -1,4 +1,5 @@
 var jwt = require('jwt-simple');
+var config = require('./config.js');
 
 module.exports = function (req, res) {
   if (!req.headers.authorization) {
@@ -9,7 +10,7 @@ module.exports = function (req, res) {
   ;
 
   var token = req.headers.authorization.split(' ')[1];
-  var payload = jwt.decode(token, 'shhhhh...');
+  var payload = jwt.decode(token, config.JWT_SECRET);
 
   console.log('payload...');
   console.log(payload);

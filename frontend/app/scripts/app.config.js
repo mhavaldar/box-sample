@@ -8,8 +8,9 @@ angular.module('psJwtApp').config(function ($urlRouterProvider, $stateProvider, 
 
   $stateProvider
     .state('main', {
-      url: '/',
-      templateUrl: '/views/main.html'
+      url: '/{folderId}',
+      templateUrl: '/views/main.html',
+      controller: 'HomeCtrl'
     })
 
     .state('register', {

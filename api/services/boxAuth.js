@@ -5,7 +5,7 @@ var config = require('./config.js');
 
 
 module.exports = function (req, res) {
-  console.log(req.body);
+  console.log('auth callback - ' + JSON.stringify(req.body));
 
   var emailid = req.body.email;
 
@@ -18,53 +18,30 @@ module.exports = function (req, res) {
   }
 
   var url = 'https://app.box.com/api/oauth2/token';
-  var userInfoUrl = 'https://www.box.com/api/2.0/users/me';
+  var userInfoUrl = config.BOX_API_BASE_URL + 'users/me';
 
   request.post(url, {json: true, form: params}, function (err, response, token) {
-    console.log(token);
+    console.log('token - ' + JSON.stringify(token));
 
-    //var returnToken =
-    //{
-    //  access_token: '8dCRJjU2zi8BzfQ4Tma3D5mkEEltX3kK',
-    //  expires_in: 4040,
-    //  restricted_to: [],
-    //  refresh_token: 'D3g9qiTFstsqnEXBWI9rGyDgwvxGnYQ0CLRi3el51D1EW6jwAtpir9J8fb3mEKLM',
-    //  token_type: 'bearer'
-    //}
-
-    var accessToken = token.access_token;
     var headers = {
-      Authorization: 'Bearer ' + accessToken
+      Authorization: 'Bearer ' + token.access_token
     };
 
     request.get({
       url: userInfoUrl, headers: headers, json: true
-    }, function (err, response, userInfo) {
-      if (err) console.log(err.message);
+    }, function (err, response, boxUser) {
+      if (err) throw err;
+      console.log('boxUser - ' + JSON.stringify(boxUser));
 
-      console.log('folders...');
-      console.log(JSON.stringify(userInfo));
+      var localUser = new User();
+      localUser.boxId = boxUser.id;
+      localUser.email = boxUser.login;
+      localUser.displayName = boxUser.name;
+      localUser.accessToken = token.access_token;
+      localUser.refreshToken = token.refresh_token;
 
-      User.findOne({
-        boxId: userInfo.id
-      }, function (err, foundUser) {
+      createSendToken(localUser, res);
 
-        console.log(token);
-        foundUser.accessToken = accessToken;
-        foundUser.refreshToken = token.refresh_token;
-
-        if (foundUser) return createSendToken(foundUser, res);
-
-        var newUser = new User();
-        newUser.boxId = userInfo.id;
-        //newUser.email = userInfo.login;
-        newUser.displayName = userInfo.name;
-
-        newUser.save(function (err) {
-          if (err) return next(err);
-          createSendToken(newUser, res);
-        })
-      });
     });
-  })
-}
+  });
+};

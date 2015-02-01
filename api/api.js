@@ -8,6 +8,7 @@ var facebookAuth = require('./services/facebookAuth.js');
 var boxAuth = require('./services/boxAuth.js');
 var createSendToken = require('./services/jwt.js');
 var jobs = require('./services/jobs.js');
+var boxFolder = require('./services/boxFolder.js');
 
 var app = express();
 app.use(bodyParser.json());
@@ -44,6 +45,8 @@ app.post('/auth/google', googleAuth);
 app.post('/auth/box', boxAuth);
 
 app.get('/jobs', jobs);
+
+app.get('/api/folder/:id?', boxFolder);
 
 mongoose.connect('mongodb://localhost/psjwt');
 

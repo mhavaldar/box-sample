@@ -1,7 +1,6 @@
-<div class="jumbotron">
-  <h1>JobFinder</h1>
-  <p class="lead">
-    Find a job today!
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+<h1>Root Folder</h1>
+<div>
+<ul class="nav nav-list">
+<li class='active' ng-repeat="item in rootFolder.item_collection.entries"><a ui-sref="main({folderId:item.id})">{{item.name}}-{{item.id}}</a></li>
+</ul>
 </div>
