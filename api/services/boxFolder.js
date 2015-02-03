@@ -3,12 +3,18 @@ var jwt = require('jwt-simple');
 var config = require('./config.js');
 
 module.exports = function (req, res) {
+  ////Mock object for local testing. Comment this block for production
+  ////<snippet>
+  //res.json(dummyFolder);
+  //return;
+  ////</snippet>
 
   if (!req.headers.authorization) {
     return res.status(401).send({
       message: 'You are not authroized!'
     });
-  };
+  }
+  ;
 
   var token = req.headers.authorization.split(' ')[1];
   var payload = jwt.decode(token, config.JWT_SECRET);
@@ -26,7 +32,7 @@ module.exports = function (req, res) {
     Authorization: 'Bearer ' + payload.access_token
   };
 
-  var url = config.BOX_API_BASE_URL + 'folders/' + (req.params.id || '0');
+  var url = config.BOX_API_BASE_URL + 'folders/' + (req.params.id || '0') + '/items';
 
   console.log('boxURL:' + url);
 
@@ -42,7 +48,7 @@ module.exports = function (req, res) {
 };
 
 // dummy records
-var rootFolderDetail = {
+var dummyFolder = {
   "type": "folder",
   "id": "0",
   "sequence_id": null,
@@ -66,32 +72,42 @@ var rootFolderDetail = {
   "item_status": "active",
   "item_collection": {
     "total_count": 6,
-    "entries": [{
-      "type": "folder",
-      "id": "3016225015",
-      "sequence_id": "0",
-      "etag": "0",
-      "name": "test1"
-    }, {"type": "folder", "id": "3016227195", "sequence_id": "0", "etag": "0", "name": "test1user1"}, {
-      "type": "folder",
-      "id": "3016227691",
-      "sequence_id": "0",
-      "etag": "0",
-      "name": "test1user2"
-    }, {"type": "folder", "id": "3016225643", "sequence_id": "0", "etag": "0", "name": "test2"}, {
-      "type": "folder",
-      "id": "3016226507",
-      "sequence_id": "0",
-      "etag": "0",
-      "name": "testpublic"
-    }, {
-      "type": "file",
-      "id": "25517650361",
-      "sequence_id": "1",
-      "etag": "1",
-      "sha1": "420f8ca512c50f9abd6ac07ef120a40b1cc04212",
-      "name": "boxnote1.boxnote"
-    }],
+    "entries": [
+      {
+        "type": "folder",
+        "id": "3016225015",
+        "sequence_id": "0",
+        "etag": "0",
+        "name": "test1"
+      },
+      {
+        "type": "folder", "id": "3016227195", "sequence_id": "0", "etag": "0", "name": "test1user1"
+      },
+      {
+        "type": "folder",
+        "id": "3016227691",
+        "sequence_id": "0",
+        "etag": "0",
+        "name": "test1user2"
+      },
+      {
+        "type": "folder", "id": "3016225643", "sequence_id": "0", "etag": "0", "name": "test2"
+      },
+      {
+        "type": "folder",
+        "id": "3016226507",
+        "sequence_id": "0",
+        "etag": "0",
+        "name": "testpublic"
+      },
+      {
+        "type": "file",
+        "id": "25517650361",
+        "sequence_id": "1",
+        "etag": "1",
+        "sha1": "420f8ca512c50f9abd6ac07ef120a40b1cc04212",
+        "name": "boxnote1.boxnote"
+      }],
     "offset": 0,
     "limit": 100,
     "order": [{"by": "type", "direction": "ASC"}, {"by": "name", "direction": "ASC"}]

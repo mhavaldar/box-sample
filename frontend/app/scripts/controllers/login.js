@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('psJwtApp')
-  .controller('LoginCtrl', function ($scope, alert, auth, $auth) {
+  .controller('LoginCtrl', function ($rootScope, $scope, alert, auth, $auth) {
     $scope.submit = function () {
       $auth.login({
         email: $scope.email, password: $scope.password
@@ -12,6 +12,7 @@ angular.module('psJwtApp')
 
     $scope.authenticate = function (provider) {
       $auth.authenticate(provider).then(function (res) {
+        $rootScope.userName = res.data.user.displayName;
         alert('success', 'Welcome', 'Thanks for coming back ' + res.data.user.displayName + '!', 4000);
       }, handleError);
     };

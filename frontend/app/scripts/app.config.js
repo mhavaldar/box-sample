@@ -54,7 +54,8 @@ angular.module('psJwtApp').config(function ($urlRouterProvider, $stateProvider, 
     url: API_URL + 'auth/box',
     clientId: 'weatn27zc7z8mxar6oklf3g7p4diqhh3',
     redirectUri: window.location.origin || window.location.protocol + '//' + window.location.host,
-    authorizationEndpoint: 'https://app.box.com/api/oauth2/authorize'
+    authorizationEndpoint: 'https://app.box.com/api/oauth2/authorize',
+    popupOptions: { width: 452, height: 700 }
   });
 
   $httpProvider.interceptors.push('authInterceptor');

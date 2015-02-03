@@ -1,6 +1,40 @@
-<h1>Root Folder</h1>
-<div>
-<ul class="nav nav-list">
-<li class='active' ng-repeat="item in rootFolder.item_collection.entries"><a ui-sref="main({folderId:item.id})">{{item.name}}-{{item.id}}</a></li>
-</ul>
+<div ng-controller="HomeCtrl">
+  <div>
+    <ul class="breadcrumb">
+      <li><a class="active" ui-sref="main">Home</a></li>
+      <!--
+          <li><a href="#">Library</a></li>
+          <li class="active">Data</li>
+      -->
+    </ul>
+  </div>
+
+  <div ng-hide="hasData" class="well well-lg">
+    May be empty???
+  </div>
+
+  <div class="list-group">
+    <span ng-repeat="item in folderItems.entries">
+
+    <a ng-if="item.type === 'folder'" ui-sref="main({folderId:item.id})" class="list-group-item">
+
+      <h4 class="list-group-item-heading">
+        <i class="fa fa-folder-o fa-1x"/>
+        {{item.name}}</h4>
+
+      <small class="text-muted">id: {{item.id}}</small>
+    </a>
+
+    <a ng-if="item.type === 'file'" ng-click="showFile(item.id)" class="list-group-item">
+
+      <h4 class="list-group-item-heading">
+        <i class="fa fa-file-o fa-1x"/>
+        {{item.name}}</h4>
+
+      <small class="text-muted">id: {{item.id}}</small>
+    </a>
+  </div>
+
 </div>
+
+

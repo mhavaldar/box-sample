@@ -6,9 +6,11 @@ var passport = require('passport');
 var googleAuth = require('./services/googleAuth.js');
 var facebookAuth = require('./services/facebookAuth.js');
 var boxAuth = require('./services/boxAuth.js');
-var createSendToken = require('./services/jwt.js');
-var jobs = require('./services/jobs.js');
+var boxLogout = require('./services/boxLogout.js');
 var boxFolder = require('./services/boxFolder.js');
+var boxFile = require('./services/boxFile.js');
+var createSendToken = require('./services/jwt.js');
+//var jobs = require('./services/jobs.js');
 
 var app = express();
 app.use(bodyParser.json());
@@ -44,9 +46,13 @@ app.post('/auth/google', googleAuth);
 
 app.post('/auth/box', boxAuth);
 
-app.get('/jobs', jobs);
+app.get('/auth/box/logout', boxLogout);
 
-app.get('/api/folder/:id?', boxFolder);
+//app.get('/jobs', jobs);
+
+app.get('/api/folders/:id?', boxFolder);
+
+app.get('/api/files/:id', boxFile);
 
 //mongoose.connect('mongodb://localhost/psjwt');
 

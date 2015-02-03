@@ -1,9 +1,24 @@
-<div class="header" ng-controller="HeaderCtrl">
-  <ul class="nav nav-pills pull-right">
-    <li ui-sref-active="active"><a ui-sref="main">Home</a></li>
-    <!--<li ui-sref-active="active"><a ui-sref="jobs">Jobs</a></li>-->
-    <li ng-hide="isAuthenticated()" ui-sref-active="active"><a ui-sref="login">Login</a></li>
-    <li ng-show="isAuthenticated()" ui-sref-active="active"><a ui-sref="logout">Logout</a></li>
-  </ul>
-  <h3 class="text-muted">Sample Website</h3> (node.js, ExpressJS, AngularJS, Box)
+<div class="navbar navbar-default" ng-controller="HeaderCtrl">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="/#">Box API Sample</a>
+  </div>
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <li ng-hide="isAuthenticated()" ui-sref-active="active"><a ng-click="authenticate('box')">Login</a></li>
+      <!--<li ng-show="isAuthenticated()" ui-sref-active="active"><a ui-sref="logout">Logout</a></li>-->
+      <li ng-show="isAuthenticated()" class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">{{userName}} <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li class="disabled"><a href="#/user/profile">View Profile</a></li>
+          <li class="divider"></li>
+          <li><a ui-sref="logout">Log Out</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
 </div>

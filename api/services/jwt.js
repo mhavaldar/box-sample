@@ -7,6 +7,7 @@ module.exports = function (user, res) {
   var payload = {
     sub: user.id,
     exp: moment().add(10, 'days').unix(),
+    displayName: user.displayName,
     access_token: user.accessToken,
     refresh_token: user.refreshToken
   }
