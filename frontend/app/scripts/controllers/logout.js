@@ -17,4 +17,5 @@ angular.module('psJwtApp')
 
     $auth.logout();
     $state.go('login');
+    $state.apply();
   });

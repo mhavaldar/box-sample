@@ -9,12 +9,16 @@ var boxAuth = require('./services/boxAuth.js');
 var boxLogout = require('./services/boxLogout.js');
 var boxFolder = require('./services/boxFolder.js');
 var boxFile = require('./services/boxFile.js');
+var boxCreateFolder = require('./services/boxCreateFolder.js');
+var boxUploadFile = require('./services/boxUploadFile.js');
 var createSendToken = require('./services/jwt.js');
+var multer = require('multer');
 //var jobs = require('./services/jobs.js');
 
 var app = express();
 app.use(bodyParser.json());
 app.use(passport.initialize());
+app.use(multer({dest: '../../uploads/'}));
 
 passport.serializeUser(function (user, done) {
   done(null, user.id);
@@ -50,9 +54,13 @@ app.get('/auth/box/logout', boxLogout);
 
 //app.get('/jobs', jobs);
 
-app.get('/api/folders/:id?', boxFolder);
+app.get('/api/folders/:id', boxFolder);
 
 app.get('/api/files/:id', boxFile);
+
+app.post('/api/createFolder', boxCreateFolder);
+
+app.post('/api/uploadFile', boxUploadFile);
 
 //mongoose.connect('mongodb://localhost/psjwt');
 

@@ -1,19 +1,36 @@
 <div ng-controller="HomeCtrl">
   <div>
+    <a ng-click="showNewFolderForm = !showNewFolderForm" ng-show="isAuthenticated()" class="btn btn-default btn-sm">New folder...</a>
+    <a ng-click="showUploadFileForm = !showUploadFileForm" ng-show="isAuthenticated()" class="btn btn-default btn-sm">Upload file...</a>
+
+    <form class="navbar-form" ng-show="showNewFolderForm" ng-submit="createFolder()">
+      <input type="text" ng-model="folderName" placeholder="Folder name" ng-required/>
+      <button class="btn btn-default btn-sm" type="submit">Create</button>
+    </form>
+
+    <form class="navbar-form" ng-show="showUploadFileForm" ng-submit="uploadFile">
+    <input type="file" nv-file-select="" uploader="uploader" />
+    <button type="button" class="btn btn-success btn-xs" ng-click="uploader.uploadAll()" ng-disabled="!uploader.getNotUploadedItems().length">
+      <span class="glyphicon glyphicon-upload"></span> Upload
+    </button>
+      </form>
+    <!--
+    <form class="navbar-form" ng-show="showUploadFileForm" ng-submit="uploadFile">
+      <input type="file" name="file"/>
+      <button class="btn btn-default btn-sm" type="submit">Upload</button>
+    </form>
+-->
+  </div>
+  <br/>
+
+  <div>
     <ul class="breadcrumb">
-      <li><a class="active" ui-sref="main">Home</a></li>
-      <!--
-          <li><a href="#">Library</a></li>
-          <li class="active">Data</li>
-      -->
+      <li ng-repeat="item in breadcrumb.route"><a href="/#/{{item.folderId}}">{{item.folderName}}</a></li>
     </ul>
   </div>
 
-  <div ng-hide="hasData" class="well well-lg">
-    May be empty???
-  </div>
-
   <div class="list-group">
+
     <span ng-repeat="item in folderItems.entries">
 
     <a ng-if="item.type === 'folder'" ui-sref="main({folderId:item.id})" class="list-group-item">
@@ -33,8 +50,7 @@
 
       <small class="text-muted">id: {{item.id}}</small>
     </a>
+      </span>
   </div>
-
 </div>
-
 

@@ -63,8 +63,9 @@ module.exports = function (req, res) {
       });
 
       httpsRes2.on('end', function() {
-        console.log('file generation string');
+        console.log('<<<<<<<<<<< file generation string');
         console.log(respString);
+        console.log('file generation string >>>>>>>>>>>>');
 
         // return respone to the client
         res.json(respString);

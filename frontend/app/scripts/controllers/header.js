@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('psJwtApp')
-  .controller('HeaderCtrl', function ($rootScope, $scope, $auth, alert) {
+  .controller('HeaderCtrl', function ($rootScope, $scope, $auth, $state, alert) {
     $scope.isAuthenticated = $auth.isAuthenticated;
     var userName = '';
     if ($auth.getPayload()) {
@@ -12,7 +12,7 @@ angular.module('psJwtApp')
     $scope.authenticate = function (provider) {
       $auth.authenticate(provider).then(function (res) {
         $rootScope.userName = res.data.user.displayName;
-        //alert('success', 'Welcome', 'Thanks for coming back ' + res.data.user.displayName + '!', 4000);
+        $state.reload();
       }, handleError);
     };
 
