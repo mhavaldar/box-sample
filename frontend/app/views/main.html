@@ -24,7 +24,7 @@
   <br/>
 
   <div>
-    <ul class="breadcrumb">
+    <ul class="breadcrumb" ng-show="isAuthenticated()">
       <li ng-repeat="item in breadcrumb.route"><a href="/#/{{item.folderId}}">{{item.folderName}}</a></li>
     </ul>
   </div>
@@ -52,5 +52,13 @@
     </a>
       </span>
   </div>
+  <span ng-hide="isAuthenticated()">
+  <div class="jumbotron">
+    <h1>Demo</h1>
+    <p>Simple demo application to show the power of Box API.</p>
+    <p><a class="btn btn-primary btn-xs" href="http://www.box.com">box.com</a>
+      <a class="btn btn-primary" href="https://developers.box.com/docs/">Box API Docs</a></p>
+  </div>
+    </span>
 </div>
 

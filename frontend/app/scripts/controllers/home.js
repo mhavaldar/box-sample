@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('psJwtApp')
-  .controller('HomeCtrl', function ($rootScope, $scope, $http, $stateParams, $auth, alert, $state, FileUploader, API_URL) {
+  .controller('HomeCtrl', function ($scope, $http, $stateParams, $auth, alert, $state, FileUploader, API_URL) {
     var folderId = $stateParams.folderId || '0';
     var url = API_URL + 'api/folders/' + folderId;
     $scope.isAuthenticated = $auth.isAuthenticated;
