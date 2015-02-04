@@ -1,7 +1,9 @@
 <div ng-controller="HomeCtrl">
   <div>
-    <a ng-click="showNewFolderForm = !showNewFolderForm" ng-show="isAuthenticated()" class="btn btn-default btn-sm">New folder...</a>
-    <a ng-click="showUploadFileForm = !showUploadFileForm" ng-show="isAuthenticated()" class="btn btn-default btn-sm">Upload file...</a>
+    <a ng-click="showNewFolderForm = !showNewFolderForm" ng-show="isAuthenticated()" class="btn btn-default btn-sm">New
+      folder...</a>
+    <a ng-click="showUploadFileForm = !showUploadFileForm" ng-show="isAuthenticated()" class="btn btn-default btn-sm">Upload
+      file...</a>
 
     <form class="navbar-form" ng-show="showNewFolderForm" ng-submit="createFolder()">
       <input type="text" ng-model="folderName" placeholder="Folder name" ng-required/>
@@ -9,11 +11,12 @@
     </form>
 
     <form class="navbar-form" ng-show="showUploadFileForm" ng-submit="uploadFile">
-    <input type="file" nv-file-select="" uploader="uploader" />
-    <button type="button" class="btn btn-success btn-xs" ng-click="uploader.uploadAll()" ng-disabled="!uploader.getNotUploadedItems().length">
-      <span class="glyphicon glyphicon-upload"></span> Upload
-    </button>
-      </form>
+      <input type="file" nv-file-select="" uploader="uploader"/>
+      <button type="button" class="btn btn-success btn-xs" ng-click="uploader.uploadAll()"
+              ng-disabled="!uploader.getNotUploadedItems().length">
+        <span class="glyphicon glyphicon-upload"></span> Upload
+      </button>
+    </form>
     <!--
     <form class="navbar-form" ng-show="showUploadFileForm" ng-submit="uploadFile">
       <input type="file" name="file"/>
@@ -30,32 +33,53 @@
   </div>
 
   <div class="list-group">
-
-    <span ng-repeat="item in folderItems.entries">
-
-    <a ng-if="item.type === 'folder'" ui-sref="main({folderId:item.id})" class="list-group-item">
-
-      <h4 class="list-group-item-heading">
-        <i class="fa fa-folder-o fa-1x"/>
-        {{item.name}}</h4>
-
-      <small class="text-muted">id: {{item.id}}</small>
-    </a>
-
-    <a ng-if="item.type === 'file'" ng-click="showFile(item.id)" class="list-group-item">
-
-      <h4 class="list-group-item-heading">
-        <i class="fa fa-file-o fa-1x"/>
-        {{item.name}}</h4>
-
-      <small class="text-muted">id: {{item.id}}</small>
-    </a>
-      </span>
+    <table class="table table-responsive table-hover ">
+      <tr ng-repeat="item in folderItems.entries">
+        <td><a ng-if="item.type === 'folder'" ui-sref="main({folderId:item.id})">
+          <i class="fa fa-folder-o fa-2x"/>
+          {{item.name}}</a>
+          <a ng-if="item.type === 'file'" ng-click="showFile(item.id)">
+            <i class="fa fa-file-o fa-2x"/>
+            {{item.name}}
+          </a>
+        </td>
+        <td><a ng-if="item.type === 'file'" ng-click="downloadFile(item.id)"><i class="fa fa-cloud-download fa-2x"/> </a></td>
+        <td><a ng-click="deleteItem(item.type, item.id)"><i class="fa fa-trash fa-2x"/> </a></td>
+      </tr>
+    </table>
   </div>
+  <!--
+    <div class="list-group">
+
+      <span ng-repeat="item in folderItems.entries">
+
+      <a ng-if="item.type === 'folder'" ui-sref="main({folderId:item.id})" class="list-group-item">
+
+        <h4 class="list-group-item-heading">
+          <i class="fa fa-folder-o fa-2x"/>
+          {{item.name}}</h4>
+
+        <small class="text-muted">id: {{item.id}}</small>
+      </a>
+
+      <a ng-if="item.type === 'file'" ng-click="showFile(item.id)" class="list-group-item">
+
+        <h4 class="list-group-item-heading">
+          <i class="fa fa-file-o fa-2x"/>
+          {{item.name}}
+        </h4>
+
+        <small class="text-muted">id: {{item.id}}</small>
+      </a>
+        </span>
+    </div>
+  -->
   <span ng-hide="isAuthenticated()">
   <div class="jumbotron">
     <h1>Demo</h1>
+
     <p>Simple demo application to show the power of Box API.</p>
+
     <p><a class="btn btn-primary btn-xs" href="http://www.box.com">box.com</a>
       <a class="btn btn-primary" href="https://developers.box.com/docs/">Box API Docs</a></p>
   </div>

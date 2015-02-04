@@ -122,4 +122,10 @@ angular.module('psJwtApp')
       });
     }
 
+    $scope.downloadFile = function (fileId) {
+      alert('success', 'Download File', 'about to download file {fileId: ' + fileId + '}', 3000);
+    }
+    $scope.deleteItem = function (type, itemId) {
+      alert('success', 'Delete', 'about to download ' + type + ' {id: ' + itemId + '}', 3000);
+    }
   });

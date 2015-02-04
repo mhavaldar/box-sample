@@ -1,18 +1,17 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-//var mongoose = require('mongoose');
 var passport = require('passport');
-//var LocalStrategy = require('./services/localStrategy.js');
 var googleAuth = require('./services/googleAuth.js');
 var facebookAuth = require('./services/facebookAuth.js');
 var boxAuth = require('./services/boxAuth.js');
-var boxLogout = require('./services/boxLogout.js');
-var boxFolder = require('./services/boxFolder.js');
-var boxFile = require('./services/boxFile.js');
-var boxCreateFolder = require('./services/boxCreateFolder.js');
+var boxFolders = require('./services/boxFolders.js');
+var boxFiles = require('./services/boxFiles.js');
 var boxUploadFile = require('./services/boxUploadFile.js');
 var createSendToken = require('./services/jwt.js');
 var multer = require('multer');
+
+//var mongoose = require('mongoose');
+//var LocalStrategy = require('./services/localStrategy.js');
 //var jobs = require('./services/jobs.js');
 
 var app = express();
@@ -35,35 +34,30 @@ app.use(function (req, res, next) {
 
 //passport.use('local-login', LocalStrategy.login);
 //passport.use('local-register', LocalStrategy.register);
-
 app.post('/register', passport.authenticate('local-register'), function (req, res) {
   createSendToken(req.user, res);
 });
-
 app.post('/login', passport.authenticate('local-login'), function (req, res) {
   createSendToken(req.user, res);
 });
 
 app.post('/auth/facebook', facebookAuth);
-
 app.post('/auth/google', googleAuth);
 
-app.post('/auth/box', boxAuth);
+app.post('/auth/box', boxAuth.auth);
+app.get('/auth/box/logout', boxAuth.logout);
 
-app.get('/auth/box/logout', boxLogout);
+app.get('/api/folders/:id?', boxFolders.getFolder);
+app.post('/api/createFolder', boxFolders.createFolder);
+app.delete('/api/folders/:id?', boxFolders.deleteFolder);
 
-//app.get('/jobs', jobs);
-
-app.get('/api/folders/:id', boxFolder);
-
-app.get('/api/files/:id', boxFile);
-
-app.post('/api/createFolder', boxCreateFolder);
-
-app.post('/api/uploadFile', boxUploadFile);
-
-//mongoose.connect('mongodb://localhost/psjwt');
+app.get('/api/files/:id?', boxFiles.getFileViewer);
+app.post('/api/uploadFile', boxFiles.uploadFile);
+app.delete('/api/files/:id?', boxFiles.deleteFile);
 
 var server = app.listen(3000, function () {
   console.log('api listening on ', server.address().port);
 });
+
+//mongoose.connect('mongodb://localhost/psjwt');
+//app.get('/jobs', jobs);
