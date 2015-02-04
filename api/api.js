@@ -6,7 +6,7 @@ var facebookAuth = require('./services/facebookAuth.js');
 var boxAuth = require('./services/boxAuth.js');
 var boxFolders = require('./services/boxFolders.js');
 var boxFiles = require('./services/boxFiles.js');
-var boxUploadFile = require('./services/boxUploadFile.js');
+//var boxUploadFile = require('./services/boxUploadFile.js');
 var createSendToken = require('./services/jwt.js');
 var multer = require('multer');
 
