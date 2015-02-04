@@ -30,7 +30,7 @@ angular.module('psJwtApp')
     // FILTERS
     uploader.filters.push({
       name: 'customFilter',
-      fn: function(item /*{File|FileLikeObject}*/, options) {
+      fn: function (item /*{File|FileLikeObject}*/, options) {
         return this.queue.length < 10;
       }
     });
@@ -101,10 +101,10 @@ angular.module('psJwtApp')
       }).error(function () {
         console.log('Unable to create folder');
       });
-    }
+    };
 
     $scope.uploadFile = function (files) {
-      alert('success', 'Upload File', 'about to upload a new file for {parent_id:' + ($scope.folderId  || '0') + '}', 3000);
+      alert('success', 'Upload File', 'about to upload a new file for {parent_id:' + ($scope.folderId || '0') + '}', 3000);
       var fd = new FormData();
       fd.append("file", files[0]);
 
@@ -112,20 +112,31 @@ angular.module('psJwtApp')
 
       $http.post(uploadUrl, fd, {
         withCredentials: true,
-        headers: {'Content-Type': undefined },
+        headers: {'Content-Type': undefined},
         transformRequest: angular.identity
-      }).success(function() {
+      }).success(function () {
         console.log('success');
         $state.reload();
-      } ).error(function() {
+      }).error(function () {
         console.log('error');
       });
-    }
+    };
 
     $scope.downloadFile = function (fileId) {
       alert('success', 'Download File', 'about to download file {fileId: ' + fileId + '}', 3000);
+    };
+
+    $scope.deleteItem = function (type, itemId, etag) {
+      alert('success', 'Delete', 'about to download ' + type + ' {id: ' + itemId + ', etag: ' + (etag || '') + '}', 3000);
+      var url = API_URL + 'api/' + type + 's/' + itemId;
+
+      $http.del(url).success(function () {
+        $state.reload();
+      }).error(function () {
+        console.log('Unable to delete ' + type + ' id: ' + itemId);
+      });
+
     }
-    $scope.deleteItem = function (type, itemId) {
-      alert('success', 'Delete', 'about to download ' + type + ' {id: ' + itemId + '}', 3000);
-    }
+
+
   });
