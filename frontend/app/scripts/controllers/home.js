@@ -124,13 +124,22 @@ angular.module('psJwtApp')
 
     $scope.downloadFile = function (fileId) {
       alert('success', 'Download File', 'about to download file {fileId: ' + fileId + '}', 3000);
+
+      var url = API_URL + 'api/files/' + itemId;
+      console.log(url);
+
+      $http.delete(url).success(function () {
+        $state.reload();
+      }).error(function () {
+        console.log('Unable to delete ' + type + ' id: ' + itemId);
+      });
     };
 
     $scope.deleteItem = function (type, itemId, etag) {
-      alert('success', 'Delete', 'about to download ' + type + ' {id: ' + itemId + ', etag: ' + (etag || '') + '}', 3000);
       var url = API_URL + 'api/' + type + 's/' + itemId;
+      console.log(url);
 
-      $http.del(url).success(function () {
+      $http.delete(url).success(function () {
         $state.reload();
       }).error(function () {
         console.log('Unable to delete ' + type + ' id: ' + itemId);

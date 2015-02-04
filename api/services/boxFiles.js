@@ -14,8 +14,6 @@ module.exports.getFileViewer = function (req, res) {
   var token = req.headers.authorization.split(' ')[1];
   var payload = jwt.decode(token, config.JWT_SECRET);
 
-  //console.log('payload...');
-  //console.log(payload);
   if (!payload.access_token) {
     res.status(401).send({
       message: 'Authentication failed'
@@ -31,19 +29,19 @@ module.exports.getFileViewer = function (req, res) {
     }
   }
 
-  var httpsReq = https.request(options, function(httpsRes) {
+  var httpsReq = https.request(options, function (httpsRes) {
 
     var loc = httpsRes.headers.location;
     console.log("location: ", loc);
 
     // generate HTML5 document
-/*
-    curl https://view-api.box.com/1/documents \
-      -H "Authorization: Token jspw1fi10zivi180yg3p9mqkruwv6bnt" \
-      -H "Content-type: application/json" \
-      -d '{"url": "https://dl.boxcloud.com/bc/*"}' \
-      -X POST
-*/
+    /*
+     curl https://view-api.box.com/1/documents \
+     -H "Authorization: Token jspw1fi10zivi180yg3p9mqkruwv6bnt" \
+     -H "Content-type: application/json" \
+     -d '{"url": "https://dl.boxcloud.com/bc/*"}' \
+     -X POST
+     */
 
     var httpsReq2 = https.request({
       host: 'api.box.com',
@@ -58,11 +56,11 @@ module.exports.getFileViewer = function (req, res) {
 
       var respString = '';
 
-      httpsRes2.on('data', function(d) {
+      httpsRes2.on('data', function (d) {
         respString += d;
       });
 
-      httpsRes2.on('end', function() {
+      httpsRes2.on('end', function () {
         console.log('<<<<<<<<<<< file generation string');
         console.log(respString);
         console.log('file generation string >>>>>>>>>>>>');
@@ -74,18 +72,18 @@ module.exports.getFileViewer = function (req, res) {
     httpsReq2.write('{"url": "' + loc + '"}');
     httpsReq2.end();
 
-    httpsReq2.on('error', function(e) {
+    httpsReq2.on('error', function (e) {
       console.error('Error at httpsReq2');
       console.error(e);
     });
 
-    httpsRes.on('data', function(d) {
+    httpsRes.on('data', function (d) {
       //process.stdout.write(d);
     });
   });
   httpsReq.end();
 
-  httpsReq.on('error', function(e) {
+  httpsReq.on('error', function (e) {
     console.log('Error at first req');
     console.error(e);
   });
@@ -147,14 +145,8 @@ module.exports.uploadFile = function (req, res) {
 
 module.exports.deleteFile = function (req, res) {
 
-  var parentId = '';
-  var formBody = req.body;
-  for (var k in formBody) {
-    parentId += formBody[k];
-  }
-  console.log('parentId: ' + parentId);
-  console.log("req.files >>>>>>>>");
-  console.log(req.files);
+  var fileId = req.params.id;
+  console.log('fileId: ' + fileId);
 
   if (!req.headers.authorization) {
     return res.status(401).send({
@@ -166,8 +158,8 @@ module.exports.deleteFile = function (req, res) {
   var token = req.headers.authorization.split(' ')[1];
   var payload = jwt.decode(token, config.JWT_SECRET);
 
-  console.log('payload...');
-  console.log(payload);
+  //console.log('payload...');
+  //console.log(payload);
 
   if (!payload.access_token) {
     res.status(401).send({
@@ -175,24 +167,20 @@ module.exports.deleteFile = function (req, res) {
     });
   }
 
+  var headers = {
+    'Authorization': 'Bearer ' + payload.access_token
+  };
 
-  /*
-   var headers = {
-   'Authorization': 'Bearer ' + payload.access_token
-   };
+  var url = 'https://api.box.com/2.0/files/' + fileId;
 
-   var url = 'https://api.box.com/2.0/folders';
+  request.del({
+    url: url, headers: headers
+  }, function (err, response) {
+    if (err) throw err;
 
-   console.log('body: ' + newFolder);
-
-   request.post({
-   url: url, headers: headers, json: true, body: newFolder
-   }, function (err, response, folder) {
-   if (err) throw err;
-
-   console.log('Folder details')
-   console.log(JSON.stringify(folder));
-   res.json(folder);
-   });
-   */
+    if (response.status === '204') {
+      console.log('successfully deleted');
+    }
+    res.json('{status: successful}');
+  });
 };

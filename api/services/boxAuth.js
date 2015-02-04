@@ -92,3 +92,17 @@ module.exports.logout = function (req, res) {
   });
 }
 
+module.exports.getAccessToken = function (req, res) {
+
+  if (!req.headers.authorization) {
+    return '';
+  }
+
+  var token = req.headers.authorization.split(' ')[1];
+  var payload = jwt.decode(token, config.JWT_SECRET);
+
+  console.log('payload...');
+  console.log(payload);
+
+  return payload.access_token;
+}

@@ -101,8 +101,8 @@ module.exports.deleteFolder = function (req, res) {
   var token = req.headers.authorization.split(' ')[1];
   var payload = jwt.decode(token, config.JWT_SECRET);
 
-  console.log('payload...');
-  console.log(payload);
+  //console.log('payload...');
+  //console.log(payload);
 
   if (!payload.access_token) {
     res.status(401).send({
@@ -114,18 +114,19 @@ module.exports.deleteFolder = function (req, res) {
     Authorization: 'Bearer ' + payload.access_token
   };
 
-  var url = config.BOX_API_BASE_URL + 'folders/' + (req.params.id || '0') + '/items';
+  var url = 'https://api.box.com/2.0/folders/' + req.params.id + '?recursive=true';
 
   console.log('boxURL:' + url);
 
-  request.get({
-    url: url, headers: headers, json: true
-  }, function (err, response, folder) {
+  request.del({
+    url: url, headers: headers
+  }, function (err, response) {
     if (err) throw err;
 
-    console.log('Folder details')
-    console.log(JSON.stringify(folder));
-    res.json(folder);
+    if (response.status === '204') {
+      console.log('successfully deleted');
+    }
+    res.json('{status: successful}');
   });
 };
 

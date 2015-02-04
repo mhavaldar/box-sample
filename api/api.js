@@ -54,6 +54,7 @@ app.delete('/api/folders/:id?', boxFolders.deleteFolder);
 app.get('/api/files/:id?', boxFiles.getFileViewer);
 app.post('/api/uploadFile', boxFiles.uploadFile);
 app.delete('/api/files/:id?', boxFiles.deleteFile);
+//app.get('/api/downloadFile/:id?', boxFiles.downloadFile);
 
 var server = app.listen(3000, function () {
   console.log('api listening on ', server.address().port);
